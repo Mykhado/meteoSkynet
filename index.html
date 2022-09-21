@@ -10,10 +10,21 @@
   <body>
     <h1>Trouve les endroits les plus chauds de ton pays!</h1>
     <section id="search">
-      <input type="text" />
-      <button>Afficher</button>
+      <form action="">
+        <input type="text" id="texte" /> <br>
+        <input type="button" id="btnSearch" value="AFFICHER" />
+      </form>
+      <section id></section>
     </section>
-    <section id="meteoInfo"></section>
+    <section id="meteoInfo">
+      <h2 id="condition"></h2>
+      <p id="date-heure"></p>
+      <p id="tempMinMax"></p>
+      <div id="weatherPic"></div>
+    </section>
+    <img id="sun" src="./media/soleil-2.png" alt="" />
+    <img id="cloud" src="./media/cloud-computing.png" alt="" />
+    <img id="moon" src="./media/pleine-lune.png" alt="" />
     <script src="index.js"></script>
   </body>
 </html>
