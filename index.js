@@ -11,8 +11,7 @@ let sunUp;
 let sunDown;
 let imgMeteoBig;
 let conditionClim;
-let searchBtn = document.getElementById("btnSearch");
-let searchUser = document.getElementById("texte");
+// let searchBtn = document.getElementById("btnSearch");
 
 // searchBtn.addEventListener("click", () => {
 //   userChoice = searchUser.value;
@@ -42,10 +41,11 @@ let searchUser = document.getElementById("texte");
 //       temperature.innerHTML = `min: ${Tminday}°  <span id="sizeTemp">${instantTemp}°</span>  max: ${Tmaxday}°`;
 //     });
 // });
-
-searchUser.addEventListener("change", () => {
+let searchUser = document.getElementById("texte");
+searchUser.addEventListener("change", (e) => {
   userChoice = searchUser.value;
   console.log(userChoice);
+  e.preventDefault();
   // alert("test");
   fetch(`https://www.prevision-meteo.ch/services/json/${userChoice}`)
     .then((response) => response.json())

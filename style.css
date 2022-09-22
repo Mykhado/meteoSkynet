@@ -1,108 +1,106 @@
-@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 body {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-    background-color: rgb(72, 72, 243);
-    color: white;
+  margin: 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(72, 72, 243);
+  color: white;
 }
 
 h1 {
-    font-family: 'Alfa Slab One', cursive;
-    background-color: rgba(217, 187, 35, 0.69);
-    text-shadow: 3px 2px 3px rgba(0,0,0,0.85);
-    padding: 50px;
-    border-radius: 50px;
-    border: solid 1mm pink;
-
+  font-family: "Alfa Slab One", cursive;
+  background-color: rgba(217, 187, 35, 0.69);
+  text-shadow: 3px 2px 3px rgba(0, 0, 0, 0.85);
+  padding: 20px;
+  border-radius: 50px;
+  border: solid 1mm pink;
 }
-h2{
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.3em;
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3em;
 }
-#texte{
-    text-align: center;
-    background-color: rgba(255, 255, 255, 0.525);
-    border-radius: 30px;
-    height: 50px;
-    font-size: 1.5em;
-    color:black;
-    font-weight: bold;
-    font-family: 'Roboto', sans-serif;
-  
+#texte {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.525);
+  border-radius: 30px;
+  height: 50px;
+  font-size: 1.5em;
+  color: black;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
 }
-#btnSearch{
-    margin-top: 20px;
-    width: 130px;
-    height: 70px;
-    font-size: 1.5em;
-    font-weight: bold;
-    border-radius: 20px;
-    border: none;
-    background-color: rgba(245, 245, 245, 0.403);
-    color: blueviolet;
-    cursor: pointer;
-    font-family: 'Roboto', sans-serif;
+#btnSearch {
+  margin-top: 20px;
+  width: 130px;
+  height: 70px;
+  font-size: 1.5em;
+  font-weight: bold;
+  border-radius: 20px;
+  border: none;
+  background-color: rgba(245, 245, 245, 0.403);
+  color: blueviolet;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
 }
-#btnSearch:hover{
-    background-color: rgba(160, 147, 28, 0.482);
-    transition: ease-in-out 0.5s;
-    color: white;
+#btnSearch:hover {
+  background-color: rgba(160, 147, 28, 0.482);
+  transition: ease-in-out 0.5s;
+  color: white;
 }
 
 #sun {
-    position: absolute;
-    top: 2%;
-    left: 0;
-    z-index: -1;
+  position: absolute;
+  top: 2%;
+  left: 0;
+  z-index: -1;
 }
 
 #cloud {
-    position: absolute;
-    z-index: -1;
-    bottom: 10%;
-    width: 800px;
+  position: absolute;
+  z-index: -1;
+  bottom: 10%;
+  width: 500px;
 }
-#moon{
-    position: absolute;
-    z-index: -1;
-    bottom: -2%;
-    right: 0;
+#moon {
+  position: absolute;
+  z-index: -1;
+  bottom: -2%;
+  right: 0;
 }
 
 #search {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    background-color: rgba(14, 86, 157, 0.594);
-    width: 300px;
-    padding: 50px;
-    border-radius: 50px;
-    border: solid 1mm pink;
-    text-shadow: 3px 2px 3px rgba(0,0,0,0.85);
-
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color: rgba(14, 86, 157, 0.594);
+  width: 200px;
+  padding: 50px;
+  border-radius: 50px;
+  border: solid 1mm pink;
+  text-shadow: 3px 2px 3px rgba(0, 0, 0, 0.85);
 }
-#meteoInfo{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    background-color: rgba(14, 86, 157, 0.67);
-    width: 300px;
-    padding: 50px;
-    border-radius: 50px;
-    border: solid 1mm pink;
-    text-shadow: 3px 2px 3px rgba(0,0,0,0.85);
-    margin-top: 20px;
+#meteoInfo {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: rgba(14, 86, 157, 0.67);
+  width: auto;
+  padding: 10px;
+  border-radius: 50px;
+  border: solid 1mm pink;
+  text-shadow: 3px 2px 3px rgba(0, 0, 0, 0.85);
+  margin-top: 20px;
 }
-#sizeTemp{
-    font-size: 5em;
+#sizeTemp {
+  font-size: 5em;
 }
-#date-heure{
-    font-size: 1.5em;
+#date-heure {
+  font-size: 1.5em;
 }
